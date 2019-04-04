@@ -1,0 +1,10 @@
+n=int(input())
+list=list(map(int,input().split(' ')))
+k=[]
+
+    
+for i in range(0,len(list)-1,1):
+    h=abs(list[i]-list[i+1])
+    k.append(h)
+    
+print(min(k))
